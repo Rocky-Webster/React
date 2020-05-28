@@ -1,0 +1,55 @@
+.content{
+    width: 100%;
+  }
+  .content__inner{
+    position: relative;
+  }
+  .content__bgPhoto{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    margin-top: 78px;
+    border-radius: 5px 5px 0 0;
+  }
+  .content__avatarBg{
+    position: relative;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+  }
+  .content__avatar{
+    position: absolute;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    top: -75px;
+    left: 25px;
+    border: 10px solid #ffffff;
+    z-index: 9;
+  }
+  .content__title{
+    text-align: center;
+    max-width: 600px;
+  }
+  .conttent__name{
+    font-size: 30px;
+    font-weight: 400;
+    cursor: default;
+    margin-bottom: 5px;
+  }
+  .contetn__information{
+    margin-top: 5px;
+    cursor: default;
+    
+  }
+  .content__information-text{
+    margin-top: 3px;
+  }
+  
+  .profile-content{
+    height: 100vh;
+  }
