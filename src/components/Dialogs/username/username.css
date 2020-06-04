@@ -1,0 +1,39 @@
+.border{
+    border-bottom: 1px solid #e8e8e8;
+}
+.username{
+    height: 65px;
+    width: 100%;
+    padding: 5px 10px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.username__pic{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    box-shadow:         0px 0px 7px 0px rgba(50, 50, 50, 0.56);
+}
+.username__text{
+    padding-left: 15px;
+}
+.username__name{
+    font-size: 18px;
+    margin-bottom: -10px;
+
+}
+.username__links{
+    color: black;
+    text-decoration: none;
+}
+.username__links:active{
+    outline: none;
+}
+
+.username__message{
+    font-size: 16px;
+}

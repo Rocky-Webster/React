@@ -1,0 +1,20 @@
+.display{
+    display: flex;
+    justify-content: space-between;
+}
+.dialogs{
+    position: relative;
+    width: 300px;
+    height: 760px;
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+    border-radius: 5px 0 0 5px;
+}
+.messages{
+    width: 700px;
+    height: 759px;
+    border: 1px solid #e8e8e8;
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+}
+

@@ -3,6 +3,12 @@
 body{
   font-family: 'PT Sans', sans-serif;
 }
+a:focus{
+  outline:none;
+}
+.content{
+
+}
 .wrapper{
   max-width: 1000px;
   margin: 0 auto;

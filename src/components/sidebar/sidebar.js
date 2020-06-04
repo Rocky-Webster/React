@@ -1,45 +1,47 @@
-import React from 'react';
+import React from 'react'
+import {NavLink} from 'react-router-dom'
+
 import './sidebar.css'
 
 function Sidebar() {
-    return(
+    return (
         <div className="sidebar">
             <div className="sidebar__inner">
                 <div className="sidebar__items">
                     <div className="sidebar__item">
-                        <a href="#!" className="sidebar__link">
+                        <NavLink to="/profile" className="sidebar__link">
                             Profile
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="sidebar__item">
-                        <a href="#!" className="sidebar__link">
+                        <NavLink to="/feed" className="sidebar__link">
                             Feed
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="sidebar__item">
-                        <a href="#!" className="sidebar__link">
+                        <NavLink to="/dialogs" className="sidebar__link">
                             Messages
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="sidebar__item">
-                        <a href="#!" className="sidebar__link">
+                        <NavLink to="#!" className="sidebar__link">
                             Friends
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="sidebar__item">
-                        <a href="#!" className="sidebar__link">
+                        <NavLink to="#!" className="sidebar__link">
                             Photos
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="sidebar__item">
-                        <a href="#!" className="sidebar__link">
+                        <NavLink to="#!" className="sidebar__link">
                             Music
-                        </a>
+                        </NavLink>
                     </div>
                     <div className="sidebar__item">
-                        <a href="#!" className="sidebar__link">
+                        <NavLink to="#!" className="sidebar__link">
                             Videos
-                        </a>
+                        </NavLink>
                     </div>
                 </div>
             </div>

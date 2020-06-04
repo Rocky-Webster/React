@@ -27,8 +27,15 @@
     color: #ffffff;
     font-size: 18px;
     font-weight: 400;
-    transition: opacity .25s;
+    outline: none;
+    transition: opacity .15s;
   }
+    .active{
+      color: gold;
+    }
   .sidebar__link:hover{
-    opacity: .75;
+    opacity: .8;
   }
+    .sidebar__link:focus{
+        outline:none;
+    }

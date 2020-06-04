@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Information from '../user-info/information';
+import Information from './user-info/information';
 import Myposts from './myposts/myposts';
 
 function Profile() {
