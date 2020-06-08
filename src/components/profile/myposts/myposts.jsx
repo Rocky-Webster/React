@@ -3,15 +3,10 @@ import './myposts.css'
 import Post from './post/mypost'
 
 
-function Myposts() {
+function Myposts(props) {
 
-    let posts = [
-        {id: 1, message: "Why nobody loves me?"},
-        {id: 2, message: "It was a good day."},
-        {id: 3, message: "Hi! This is my first post here. ", age: " My age is 18"},
 
-    ]
-    let postsElements = posts
+    let postsElements = props.posts
         .map(post => <Post message={post.message} age={post.age} /> )
 
 

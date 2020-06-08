@@ -10,7 +10,7 @@ import Feed from "./components/feed/feed";
 import Dialogs from "./components/Dialogs/dialogs";
 
 
-function App() {
+function App(props) {
     return (
         <BrowserRouter>
             <div>
@@ -18,9 +18,9 @@ function App() {
                 <Sidebar/>
                 <div className="content">
                     <div className="wrapper">
-                        <Route path="/profile" component={Profile}/>
-                        <Route path="/feed" component={Feed}/>
-                        <Route path="/dialogs" component={Dialogs}/>
+                        <Route path="/profile" render={ () => <Profile posts={props.posts} /> } />
+                        <Route path="/feed"  render={ () => <Feed /> } />
+                        <Route path="/dialogs" render={ () => <Dialogs users={props.users} /> } />
 
                     </div>
                 </div>
