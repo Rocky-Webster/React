@@ -2,6 +2,14 @@ import React from 'react';
 import './messages.css'
 
 const Messages = (props) => {
+
+    let newMessageElement = React.createRef()
+
+    let sendMeassage = () => {
+        let text = newMessageElement.current.value
+        alert(text)
+    }
+
     return (
         <div className="messages">
             <div className="messages__header">
@@ -18,15 +26,16 @@ const Messages = (props) => {
             </div>
             <div className="messages__footer">
                 <div className="messages__files">
-                    files
+                    <button className="messages__button">Files</button>
                 </div>
-                <div className="messages__text">
+                <textarea className="messages__textarea" ref={newMessageElement} ></textarea>
+                {/*<div className="messages__text">
                     <div className="messages__text-border">
 
                     </div>
-                </div>
+                </div>*/}
                 <div className="messages__files">
-                    send
+                    <button className="messages__button" onClick={ sendMeassage }>Send</button>
                 </div>
             </div>
         </div>

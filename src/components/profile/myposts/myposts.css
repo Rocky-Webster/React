@@ -1,5 +1,23 @@
 .myposts{
-    height: 20px;
-    width: 20px;
-    background-color: blue;
+   padding: 10px;
+}
+.myposts__add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.myposts__add-texarea{
+    width: 80%;
+    min-height: 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-color: #e8e8e8;
+}
+.myposts__add-button{
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    background-color: #6495ED;
+    color: white;
 }
