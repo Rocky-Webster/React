@@ -18,9 +18,14 @@ function App(props) {
                 <Sidebar/>
                 <div className="content">
                     <div className="wrapper">
-                        <Route path="/profile" render={ () => <Profile posts={props.state.profilePage.posts} /> } />
-                        <Route path="/feed"  render={ () => <Feed /> } />
-                        <Route path="/dialogs" render={ () => <Dialogs users={props.state.dialogsPage.users} /> } />
+                        <Route path="/profile" render={() => <Profile
+                            profilePage={props.state.profilePage}
+                            addPost={props.addPost}
+                            updateNewPostText={props.updateNewPostText}
+                        />}
+                        />
+                        <Route path="/feed" render={() => <Feed/>}/>
+                        <Route path="/dialogs" render={() => <Dialogs users={props.state.dialogsPage.users}/>}/>
 
                     </div>
                 </div>

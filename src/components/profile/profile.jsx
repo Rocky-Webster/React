@@ -10,7 +10,11 @@ function Profile(props) {
             <div className="wrapper">
                 <div className="profileBg">
                     <Information/>
-                    <Myposts posts={props.posts}/>
+                    <Myposts posts={props.profilePage.posts}
+                             newPostText={props.profilePage.newPostText}
+                             addPost={props.addPost}
+                             updateNewPostText={props.updateNewPostText}
+                    />
                 </div>
             </div>
         </div>
