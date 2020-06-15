@@ -20,9 +20,7 @@ function App(props) {
                     <div className="wrapper">
                         <Route path="/profile" render={() => <Profile
                             profilePage={props.state.profilePage}
-                            addPost={props.addPost}
-                            updateNewPostText={props.updateNewPostText}
-                        />}
+                            dispatch={props.dispatch} />}
                         />
                         <Route path="/feed" render={() => <Feed/>}/>
                         <Route path="/dialogs" render={() => <Dialogs users={props.state.dialogsPage.users}/>}/>

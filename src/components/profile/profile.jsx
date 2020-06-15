@@ -11,10 +11,7 @@ function Profile(props) {
                 <div className="profileBg">
                     <Information/>
                     <Myposts posts={props.profilePage.posts}
-                             newPostText={props.profilePage.newPostText}
-                             addPost={props.addPost}
-                             updateNewPostText={props.updateNewPostText}
-                    />
+                             dispatch={props.dispatch}/>
                 </div>
             </div>
         </div>
