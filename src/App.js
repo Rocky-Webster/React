@@ -20,10 +20,12 @@ function App(props) {
                     <div className="wrapper">
                         <Route path="/profile" render={() => <Profile
                             profilePage={props.state.profilePage}
-                            dispatch={props.dispatch} />}
+                            dispatch={props.dispatch}/>}
                         />
                         <Route path="/feed" render={() => <Feed/>}/>
-                        <Route path="/dialogs" render={() => <Dialogs users={props.state.dialogsPage.users}/>}/>
+                        <Route path="/dialogs" render={() => <Dialogs users={props.state.dialogsPage.users}
+                                                                      dispatch={props.dispatch}
+                                                                      dialogsPage={props.state.dialogsPage}/>}/>
 
                     </div>
                 </div>

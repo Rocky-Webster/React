@@ -20,7 +20,7 @@ const Dialogs = (props) => {
                 { usersElements }
             </div>
             <div className="Messages">
-                <Messages name={props.users[0].name}/>
+                <Messages name={props.users[0].name} dispatch={props.dispatch} messages={props.dialogsPage.messages}/>
             </div>
         </div>
     )

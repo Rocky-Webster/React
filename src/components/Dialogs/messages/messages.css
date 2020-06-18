@@ -25,7 +25,10 @@
 .messages__menu{
     width: 35px;
 }
+.messages__messages{
+    padding: 5px 10px;
 
+}
 .messages__footer{
     position: absolute;
     bottom: 0;
