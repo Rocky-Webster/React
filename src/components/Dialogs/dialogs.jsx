@@ -7,9 +7,6 @@ import './dialogs.css'
 
 const Dialogs = (props) => {
 
-
-
-
     let usersElements = props.users
         .map( user => <Username name={user.name} id={user.id} /> )
 

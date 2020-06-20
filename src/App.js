@@ -10,7 +10,7 @@ import Feed from "./components/feed/feed";
 import Dialogs from "./components/Dialogs/dialogs";
 
 
-function App(props) {
+const App = (props) => {
     return (
         <BrowserRouter>
             <div>
